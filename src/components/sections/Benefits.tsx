@@ -1,4 +1,5 @@
 import { AnimatedSection } from "../AnimatedSection";
+import { CheckoutCTA } from "../CheckoutCTA";
 import { FeatureIcon } from "../Icons";
 import { USE_CASES } from "@/lib/constants";
 
@@ -32,6 +33,10 @@ export function Benefits() {
                 </span>
               </div>
             ))}
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <CheckoutCTA />
           </div>
         </div>
       </section>

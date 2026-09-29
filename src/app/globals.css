@@ -39,6 +39,10 @@
     @apply relative inline-flex items-center justify-center rounded-md bg-[#F6E6C4] px-8 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[#1A120C] shadow-[0_10px_32px_rgba(246,230,196,0.28)] transition-all duration-300 hover:bg-[#FFF8EA] hover:shadow-[0_14px_40px_rgba(246,230,196,0.42)] hover:scale-[1.02] active:scale-[0.98];
   }
 
+  .btn-checkout {
+    @apply relative inline-flex items-center justify-center rounded-md bg-[#1F9A62] px-8 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[#F6EFE6] shadow-[0_10px_34px_rgba(31,154,98,0.42)] transition-all duration-300 hover:bg-[#28B072] hover:shadow-[0_14px_42px_rgba(40,176,114,0.55)] hover:scale-[1.02] active:scale-[0.98];
+  }
+
   .btn-gold-outline {
     @apply inline-flex items-center justify-center rounded-md border border-luxury-gold-dark/70 bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-[0.16em] text-luxury-gold-light transition-all duration-300 hover:border-luxury-gold hover:bg-luxury-gold-dark/30;
   }

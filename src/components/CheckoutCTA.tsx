@@ -33,7 +33,7 @@ export function CheckoutCTA({
       <a
         href={checkout ? CHECKOUT_URL : "#comprar"}
         id={checkout ? "cta-checkout" : undefined}
-        className={`btn-gold w-full max-w-xl sm:w-auto ${yesSizeClasses}`}
+        className={`${checkout ? "btn-checkout" : "btn-gold"} w-full max-w-xl sm:w-auto ${yesSizeClasses}`}
         onClick={
           checkout
             ? () => trackMeta("InitiateCheckout", { ...META_CONTENT })

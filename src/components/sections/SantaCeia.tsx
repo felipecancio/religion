@@ -1,5 +1,6 @@
 import { AnimatedSection } from "../AnimatedSection";
 import { ArtImage } from "../ArtImage";
+import { CheckoutCTA } from "../CheckoutCTA";
 import { SANTA_CEIA_IMAGES } from "@/lib/constants";
 
 export function SantaCeia() {
@@ -37,6 +38,10 @@ export function SantaCeia() {
                 />
               </div>
             ))}
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <CheckoutCTA />
           </div>
         </div>
       </section>
