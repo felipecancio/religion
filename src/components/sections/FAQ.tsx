@@ -19,14 +19,14 @@ export function FAQ() {
             <div className="gold-line mx-auto mt-6 w-16" />
           </div>
 
-          <div className="divide-y divide-white/10 border-y border-white/10">
+          <div className="divide-y divide-luxury-gold-dark/25 border-y border-luxury-gold-dark/25">
             {FAQS.map((item) => (
               <details key={item.question} className="group py-1">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-left">
                   <span className="font-display text-lg font-medium text-white/90 md:text-xl">
                     {item.question}
                   </span>
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-luxury-gold/30 text-luxury-gold transition-transform duration-300 group-open:rotate-45">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm border border-luxury-gold-dark/50 text-luxury-gold transition-transform duration-300 group-open:rotate-45">
                     <svg
                       className="h-4 w-4"
                       viewBox="0 0 24 24"

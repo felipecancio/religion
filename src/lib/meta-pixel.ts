@@ -1,8 +1,8 @@
 export const META_PIXEL_ID = "1221625573293986";
 
 export const META_CONTENT = {
-  content_name: "Mega Pack Deluxe",
-  content_ids: ["mega-pack-deluxe"],
+  content_name: "Mega Pack Religión",
+  content_ids: ["mega-pack-religion"],
   content_type: "product",
 } as const;
 

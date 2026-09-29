@@ -1,122 +1,123 @@
-export const CHECKOUT_URL = "https://pay.hotmart.com/E106660148F?checkoutMode=10";
-export const CTA_LABEL = "Quiero el Mega Pack Deluxe";
+export const CHECKOUT_URL =
+  "https://pay.hotmart.com/B107811929B?off=m112ztkf&checkoutMode=10";
+export const CTA_LABEL = "Quiero el Mega Pack Religión";
 
 export const HERO_BADGES = [
-  "Acceso inmediato",
+  "Listos para imprimir",
   "Uso comercial incluido",
-  "+200 diseños exclusivos",
-  "Actualizaciones de por vida",
+  "+200 diseños originales",
+  "Alta resolución",
 ] as const;
 
 export const TRUST_STATS = [
-  { value: "+200", label: "Diseños exclusivos" },
+  { value: "+200", label: "Diseños originales" },
   { value: "Alta", label: "Resolución de impresión" },
   { value: "100%", label: "Uso comercial" },
-  { value: "Gratis", label: "Actualizaciones de por vida" },
+  { value: "Fácil", label: "Acceso organizado" },
 ] as const;
 
 export const WHY_DELUXE = [
   {
-    title: "Diseños Premium",
+    title: "Diseños originales",
     description:
-      "Arte curado con acabado de galería. Cada pieza está pensada para que tu producto se vea caro a primera vista.",
+      "Material propio, en alta resolución. No es relleno de banco de imágenes ni el mismo archivo que ya usa todo el mundo.",
     icon: "sparkles",
   },
   {
-    title: "Selección Exclusiva",
+    title: "No están en otro lado",
     description:
-      "No es un dump de archivos. Es una colección que no vas a encontrar en packs genéricos ni en bancos de imágenes.",
+      "Una selección que no vas a cruzarte en packs genéricos ni en la vitrina de enfrente. El cuadro se distingue de entrada.",
     icon: "diamond",
   },
   {
-    title: "Alta Resolución",
+    title: "Alta resolución",
     description:
-      "Listos para impresión en gran formato, DTF y sublimación sin pixelar ni perder detalle.",
+      "Imágenes nítidas hasta grandes tamaños. El cuadro de un metro, o el de 2,5, se imprime sin pixelar ni perder detalle.",
     icon: "resolution",
   },
   {
-    title: "Uso Comercial",
+    title: "Listos para imprimir",
     description:
-      "Vende cuadros, playeras, tazas y regalos con tranquilidad. La licencia comercial va incluida.",
+      "Archivos digitales JPG y PNG de alta calidad. Los abres en cualquier programa y produces el mismo día.",
+    icon: "print",
+  },
+  {
+    title: "Uso comercial",
+    description:
+      "La licencia va incluida. Vendes el cuadro, el lienzo o el artículo personalizado sin pagar regalías por cada venta.",
     icon: "commercial",
   },
   {
-    title: "Mayor Valor Percibido",
+    title: "Organizados",
     description:
-      "Cuando el diseño se ve premium, el cliente deja de pelear por precio y acepta pagar más.",
-    icon: "value",
-  },
-  {
-    title: "Actualizaciones Gratuitas",
-    description:
-      "Nuevas piezas se suman al pack sin costo extra. Compras una vez y la colección crece contigo.",
+      "Fácil acceso, con subtemas muy buscados y estilo variado. Encuentras el diseño, lo imprimes y lo cobras.",
     icon: "updates",
   },
 ] as const;
 
 export const INCLUDED = [
   {
-    title: "+200 diseños exclusivos",
+    title: "+200 diseños originales",
     description:
-      "Una curaduría premium para destacar tu catálogo. Arte sofisticado, no relleno.",
+      "Estilo variado y subtemas muy buscados. Para armar un catálogo que no se parece al de al lado.",
   },
   {
-    title: "Licencia de uso comercial",
+    title: "Uso comercial liberado",
     description:
-      "Úsalos en productos físicos y digitales para vender. Sin regalías por cada venta.",
+      "Vendes el cuadro terminado sin regalías por cada venta. La licencia viene con el pack.",
   },
   {
-    title: "Archivos en alta resolución",
+    title: "JPG y PNG en alta resolución",
     description:
-      "Calidad lista para cuadros grandes, playeras, DTF, sublimación y decoración.",
+      "Archivos digitales listos para imprimir, nítidos hasta en cuadros de gran tamaño.",
   },
   {
-    title: "Actualizaciones de por vida",
+    title: "Organizados y de fácil acceso",
     description:
-      "Cada vez que agreguemos nuevas piezas, las recibes sin pagar de nuevo.",
+      "Entras, eliges el diseño y produces. Sin perder la tarde buscando entre carpetas sueltas.",
+  },
+  {
+    title: "Cualquier programa",
+    description:
+      "Si abre JPG o PNG, sirve. Los usas en el programa con el que ya trabajas.",
   },
   {
     title: "Acceso inmediato",
     description:
-      "Compras y entras al pack. Sin esperas, sin trámites extra.",
-  },
-  {
-    title: "Listo para producir",
-    description:
-      "Aplica los diseños hoy mismo en tu negocio, taller o marca personal.",
+      "Compras y descargas. El mismo día puedes imprimir y tener el cuadro listo para vender.",
   },
 ] as const;
 
 export const TESTIMONIALS = [
   {
-    name: "Camilo Soto",
+    name: "Martín Duarte",
     photo: "/images/testimonials/camilo.webp",
     quote:
-      "La verdad tenía recelo de comprar. Pensé que iba a ser otro pack más de los que ya todos usan. No. Se nota que está seleccionado, y en el producto se ve lujo.",
+      "La verdad tenía recelo de comprar. Pensé que iba a ser otro pack más de los que ya todos usan. No. Se nota que está seleccionado, y en el cuadro se ve con otra presencia.",
   },
   {
-    name: "Mateo Rivas",
+    name: "Andrés Paredes",
     photo: "/images/testimonials/mateo.webp",
     quote:
-      "El contenido completo es tan bueno como las imágenes que muestran en la página, incluso diría que es mejor. La verdad, ¡felicitaciones por el trabajo!",
+      "El contenido completo es tan bueno como las imágenes de la página, incluso diría que es mejor. Los diseños anchos quedaron muy bien en el cuadro. Felicitaciones por el trabajo.",
   },
   {
-    name: "Daniel Peña",
+    name: "Javier Salinas",
     photo: "/images/testimonials/daniel-pena.webp",
     quote:
-      "Definitivamente no es otro pack más de internet. El contenido está muy bien hecho y tiene un estilo original. Lo recomiendo totalmente.",
+      "Definitivamente no es otro pack más de internet. Los diseños están muy bien hechos y tienen un estilo propio. Lo recomiendo para quien vive de vender cuadros.",
   },
 ] as const;
 
 export const USE_CASES = [
   { title: "Cuadros", icon: "frame" },
-  { title: "Playeras", icon: "shirt" },
-  { title: "Tazas", icon: "mug" },
-  { title: "DTF", icon: "print" },
-  { title: "Sublimación", icon: "sublimation" },
+  { title: "Lienzos", icon: "premium" },
+  { title: "Canvas", icon: "diamond" },
+  { title: "Gran formato", icon: "resolution" },
   { title: "Decoración", icon: "decor" },
   { title: "Regalos", icon: "gift" },
-  { title: "Productos Premium", icon: "premium" },
+  { title: "Marcos", icon: "print" },
+  { title: "Artículos personalizados", icon: "commercial" },
 ] as const;
 
 export const HOW_IT_WORKS = [
@@ -124,80 +125,83 @@ export const HOW_IT_WORKS = [
     step: "01",
     title: "Obtén tu acceso",
     description:
-      "Compra segura. En minutos tienes el Mega Pack Deluxe disponible.",
+      "Compra segura. En minutos tienes el Mega Pack Religión disponible.",
   },
   {
     step: "02",
     title: "Descarga los diseños",
     description:
-      "Entras al pack, eliges las piezas y las usas en tus productos.",
+      "Entras al pack, eliges el diseño y lo abres en el programa que ya usas.",
   },
   {
     step: "03",
-    title: "Vende con más valor",
+    title: "Vende más cuadros",
     description:
-      "Ofrece un catálogo que se ve premium y justifica un mejor precio.",
+      "Atiendes más pedidos con diseños exclusivos que ya están listos para imprimir.",
   },
 ] as const;
 
 export const FINAL_BENEFITS = [
-  "+200 diseños JPG/PNG exclusivos de alto valor percibido",
-  "Licencia de uso comercial incluida",
-  "Alta resolución para gran formatos (hasta 2,5 metros)",
-  "Actualizaciones gratuitas de por vida",
-  "Acceso inmediato después de la compra",
-  "Ideal para cuadros, playeras, tazas y regalos premium",
+  "+200 diseños originales en JPG y PNG de alta calidad",
+  "Imágenes en alta resolución, hasta 2,5 metros",
+  "Listos para imprimir en cualquier tipo de cuadro",
+  "Uso comercial liberado, sin regalías por venta",
+  "Organizados, con subtemas muy buscados y fácil acceso",
+  "Archivos digitales que abren en cualquier programa",
+  "Acceso mediante un enlace de Drive enviado directamente a tu correo electrónico",
 ] as const;
 
 export const FAQS = [
   {
-    question: "¿Qué incluye el Mega Pack Deluxe?",
+    question: "¿Qué incluye el Mega Pack Religión?",
     answer:
-      "Una colección premium con más de 200 diseños JPG/PNG exclusivos, curados para verse sofisticados en el producto final. Incluye uso comercial, archivos en alta resolución hasta 2,5 metros y actualizaciones de por vida.",
+      "Más de 200 diseños originales en JPG y PNG, en alta resolución y listos para imprimir. El material está organizado, con subtemas muy buscados y estilo variado. Incluye uso comercial y archivos nítidos hasta 2,5 metros.",
   },
   {
     question: "¿Puedo usar los diseños para vender?",
     answer:
-      "Sí. El pack incluye licencia de uso comercial. Puedes aplicarlos en cuadros, playeras, tazas, DTF, sublimación, decoración y otros productos de tu negocio.",
+      "Sí. El uso comercial viene liberado. Puedes imprimirlos en cuadros, lienzos, decoración y artículos personalizados, y vender el producto terminado sin pagar regalías por cada venta.",
   },
   {
     question: "¿Cómo recibo el acceso?",
     answer:
-      "El acceso es inmediato después de la compra. Entras al pack y empiezas a descargar los diseños para producir el mismo día.",
+      "El acceso es inmediato. Entras, el material está organizado y empiezas a descargar. El mismo día puedes elegir un diseño e imprimirlo.",
   },
   {
-    question: "¿Sirve para DTF, sublimación y gran formato?",
+    question: "¿Sirven para cuadros grandes?",
     answer:
-      "Sí. Los archivos están en alta resolución para que puedas imprimir en gran formato y aplicarlos en DTF, sublimación y productos promocionales sin perder calidad.",
+      "Sí. Son imágenes de alta resolución, pensadas para cualquier tipo de cuadro y para tamaños grandes, hasta 2,5 metros, sin pixelar ni perder detalle.",
   },
   {
-    question: "¿En qué se diferencia de otros packs?",
+    question: "¿En qué se diferencian de otros packs?",
     answer:
-      "La mayoría de packs venden volumen. El Deluxe vende curaduría: menos ruido, más piezas con acabado premium y mayor valor percibido. Está pensado para que tus productos se vean — y se vendan — más caros.",
+      "La mayoría repite los mismos archivos. Estos diseños son originales y no los vas a encontrar en otro lugar. Con eso atiendes pedidos que antes se te iban y vendes más.",
   },
   {
-    question: "¿Hay actualizaciones?",
+    question: "¿En qué programa los abro?",
     answer:
-      "Sí. Las actualizaciones son de por vida y sin costo extra. Cuando sumemos nuevas piezas a la colección, las recibes tú también.",
+      "En cualquiera que abra JPG o PNG. Son archivos digitales listos para imprimir. No dependes de un software especial.",
   },
   {
     question: "¿Es un pago único?",
     answer:
-      "Sí. Pagas una vez, obtienes el pack y las actualizaciones futuras quedan incluidas. No hay suscripción mensual.",
+      "Sí. Pagas una vez y el pack es tuyo. No hay suscripción mensual.",
   },
   {
     question: "¿La compra es segura?",
     answer:
-      "Sí. El pago se procesa de forma protegida. Si tienes cualquier duda después de comprar, el soporte de Criativarts te acompaña.",
+      "Sí. El pago se procesa de forma protegida. Si después de comprar te queda alguna duda, el soporte de Criativarts te acompaña.",
   },
 ] as const;
 
 export const GALLERY_IMAGES = [
-  1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
+  23,
 ] as const;
 
 export const GALLERY_IMAGES_ROW2 = [
-  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
+  23, 24,
 ] as const;
 
 export const GALLERY_FEATURED = [1, 8, 12, 16, 20, 3, 10, 18] as const;
@@ -210,5 +214,16 @@ export const MOSAIC_EXCLUSIVE = [
 ] as const;
 
 export const MOSAIC_PACK = [
-  1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+  2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
+] as const;
+
+export const MOSAIC_EXTRA = [24, 25, 26, 27, 28, 29, 30] as const;
+
+export const SANTA_CEIA_IMAGES = [
+  "/images/santa-ceia/1.webp",
+  "/images/santa-ceia/2.webp",
+  "/images/santa-ceia/3.webp",
+  "/images/santa-ceia/4.webp",
+  "/images/santa-ceia/5.webp",
+  "/images/santa-ceia/6.webp",
 ] as const;

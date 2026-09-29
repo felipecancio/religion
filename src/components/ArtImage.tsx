@@ -17,7 +17,7 @@ export function ArtImage({
   ...props
 }: ArtImageProps) {
   const imageSrc = src ?? `/images/${imageId}.webp`;
-  const imageAlt = alt ?? `Diseño premium Deluxe ${imageId ?? ""}`;
+  const imageAlt = alt ?? `Diseño original ${imageId ?? ""}`;
 
   const fillClasses = fill
     ? "absolute inset-0 h-full w-full"
@@ -45,7 +45,7 @@ export function MockupImage({
   return (
     <Image
       src="/images/mockup.webp"
-      alt="Mega Pack Deluxe — Colección Premium Criativarts"
+      alt="Mega Pack Religión — Diseños originales en alta resolución"
       className={`bg-transparent object-contain ${className}`}
       priority={priority}
       quality={90}

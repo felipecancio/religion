@@ -32,7 +32,7 @@ export function HotmartCTA({
         onClick={triggerAccept}
         className={`btn-gold w-full max-w-xl sm:w-auto ${yesSizeClasses}`}
       >
-        Sí, también quiero el Mega Pack Deluxe
+        Sí, también quiero el Mega Pack Religión
       </button>
 
       {showDecline && (

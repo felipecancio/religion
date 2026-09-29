@@ -5,7 +5,7 @@ import { trackMeta } from "@/lib/meta-pixel";
 
 const WHATSAPP_NUMBER = "5522998455928";
 const WHATSAPP_MESSAGE =
-  "Hola, me gustaría obtener más información sobre el Mega Pack Deluxe";
+  "Hola, me gustaría obtener más información sobre los diseños del Mega Pack Religión";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 const CONFIRM_MS = 8000;
 
@@ -52,7 +52,7 @@ export function WhatsAppSupport() {
         <button
           type="button"
           onClick={openWhatsApp}
-          className="rounded-full border border-luxury-gold/40 bg-luxury-black/95 px-4 py-2 text-xs font-light tracking-wide text-white/85 shadow-gold backdrop-blur-md transition-colors hover:border-luxury-gold hover:text-luxury-gold"
+          className="rounded-sm border border-luxury-gold-dark/50 bg-luxury-black/95 px-4 py-2 text-xs font-light tracking-wide text-luxury-gold-light shadow-gold backdrop-blur-md transition-colors hover:border-luxury-gold hover:text-luxury-gold"
         >
           Hablar con representante
         </button>
@@ -67,7 +67,7 @@ export function WhatsAppSupport() {
             ? "Hablar con representante por WhatsApp"
             : "Abrir soporte de WhatsApp"
         }
-        className="flex h-12 w-12 items-center justify-center rounded-full border border-luxury-gold/40 bg-luxury-black/90 text-luxury-gold shadow-gold backdrop-blur-md transition-all duration-300 hover:border-luxury-gold hover:shadow-gold-lg hover:scale-105 active:scale-95"
+        className="flex h-12 w-12 items-center justify-center rounded-full border border-luxury-gold-dark/50 bg-luxury-gold-dark text-luxury-gold-light shadow-gold backdrop-blur-md transition-all duration-300 hover:bg-[#933846] hover:shadow-gold-lg hover:scale-105 active:scale-95"
       >
         <svg
           className="h-6 w-6"

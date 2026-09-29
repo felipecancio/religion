@@ -1,46 +1,46 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
+import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
 import { MetaPixel } from "@/components/MetaPixel";
 import { PricingScroll } from "@/components/PricingScroll";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
+const display = Libre_Baskerville({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["400", "700"],
   style: ["normal", "italic"],
-  variable: "--font-cormorant",
+  variable: "--font-display",
   display: "swap",
   preload: true,
 });
 
-const outfit = Outfit({
+const sans = Source_Sans_3({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-outfit",
+  weight: ["400", "500", "600"],
+  variable: "--font-sans",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mp-deluxe.vercel.app"),
-  title: "Mega Pack Deluxe — Criativarts",
+  title: "Mega Pack Religión — Criativarts",
   description:
-    "La colección más exclusiva de Criativarts. Más de 200 diseños premium con alto valor percibido, uso comercial y actualizaciones de por vida para elevar tus productos.",
+    "Más de 200 diseños originales en alta resolución, listos para imprimir en cuadros de cualquier tamaño. Uso comercial incluido y archivos organizados.",
   keywords: [
-    "Mega Pack Deluxe",
+    "Mega Pack Religión",
     "Criativarts",
-    "diseños premium",
-    "diseños exclusivos",
+    "diseños originales",
+    "diseños para cuadros",
     "alta resolución",
+    "listos para imprimir",
     "uso comercial",
-    "DTF",
-    "sublimación",
+    "archivos digitales",
   ],
   openGraph: {
-    title: "Mega Pack Deluxe — Criativarts",
+    title: "Mega Pack Religión — Criativarts",
     description:
-      "Diseños exclusivos de alto valor percibido para cuadros, playeras, DTF y productos premium.",
+      "Diseños originales en alta resolución, listos para imprimir en cuadros de cualquier tamaño.",
     url: "/",
-    siteName: "Mega Pack Deluxe",
+    siteName: "Mega Pack Religión",
     type: "website",
     locale: "es_LA",
     images: [
@@ -49,15 +49,15 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         type: "image/jpeg",
-        alt: "Mega Pack Deluxe — Colección Premium Criativarts",
+        alt: "Mega Pack Religión — Diseños originales para cuadros",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mega Pack Deluxe — Criativarts",
+    title: "Mega Pack Religión — Criativarts",
     description:
-      "Diseños exclusivos de alto valor percibido para cuadros, playeras, DTF y productos premium.",
+      "Diseños originales en alta resolución, listos para imprimir en cuadros de cualquier tamaño.",
     images: ["/og.jpg"],
   },
   robots: { index: true, follow: true },
@@ -69,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${cormorant.variable} ${outfit.variable}`}>
+    <html lang="es" className={`${display.variable} ${sans.variable}`}>
       <body className="antialiased">
         <MetaPixel />
         <PricingScroll />

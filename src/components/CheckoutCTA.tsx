@@ -44,7 +44,7 @@ export function CheckoutCTA({
       </a>
       {showHint && (
         <p className="text-xs font-light tracking-wide text-white/40">
-          Acceso inmediato · Uso comercial · Actualizaciones de por vida
+          Acceso inmediato · Uso comercial · Listos para imprimir
         </p>
       )}
     </div>

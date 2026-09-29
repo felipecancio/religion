@@ -17,7 +17,7 @@ function Stars() {
 function VerifiedBadge() {
   return (
     <span
-      className="flex h-5 w-5 items-center justify-center rounded-full bg-luxury-gold text-luxury-black"
+      className="flex h-5 w-5 items-center justify-center rounded-sm bg-luxury-gold-dark text-luxury-gold-light"
       aria-label="Verificado"
     >
       <svg className="h-2.5 w-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
@@ -37,8 +37,8 @@ export function Testimonials() {
               Testimonios
             </p>
             <h2 className="mt-3 font-display text-4xl font-light md:text-5xl">
-              Lo que dicen quienes ya tienen el{" "}
-              <span className="gold-gradient-text italic">Deluxe</span>
+              Lo que dicen quienes ya venden{" "}
+              <span className="gold-gradient-text italic">estos diseños</span>
             </h2>
             <div className="gold-line mx-auto mt-6 w-16" />
           </div>

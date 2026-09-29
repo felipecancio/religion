@@ -104,7 +104,7 @@ export function ArtCarousel({
         type="button"
         onClick={() => nudge("prev")}
         aria-label="Ver diseños anteriores"
-        className="absolute left-2 top-1/2 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-luxury-gold/30 bg-luxury-black/80 text-luxury-gold backdrop-blur-sm transition-all hover:border-luxury-gold/60 hover:bg-luxury-gold/10"
+        className="absolute left-2 top-1/2 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-sm border border-luxury-gold-dark/50 bg-luxury-black/80 text-luxury-gold backdrop-blur-sm transition-all hover:border-luxury-gold hover:bg-luxury-gold-dark/40"
       >
         <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M15 18l-6-6 6-6" strokeLinecap="round" strokeLinejoin="round" />
@@ -115,7 +115,7 @@ export function ArtCarousel({
         type="button"
         onClick={() => nudge("next")}
         aria-label="Ver más diseños"
-        className="absolute right-2 top-1/2 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-luxury-gold/30 bg-luxury-black/80 text-luxury-gold backdrop-blur-sm transition-all hover:border-luxury-gold/60 hover:bg-luxury-gold/10"
+        className="absolute right-2 top-1/2 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-sm border border-luxury-gold-dark/50 bg-luxury-black/80 text-luxury-gold backdrop-blur-sm transition-all hover:border-luxury-gold hover:bg-luxury-gold-dark/40"
       >
         <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M9 18l6-6-6-6" strokeLinecap="round" strokeLinejoin="round" />
@@ -133,11 +133,11 @@ export function ArtCarousel({
           {doubled.map((id, i) => (
             <div
               key={`${id}-${i}`}
-              className="relative h-52 w-[130px] shrink-0 overflow-hidden rounded-lg"
+              className="relative h-52 w-[130px] shrink-0 overflow-hidden rounded-sm"
             >
               <ArtImage
                 src={`${imageBasePath}/${id}.webp`}
-                alt={`Diseño premium Deluxe ${id}`}
+                alt={`Diseño original ${id}`}
                 fill
                 sizes="130px"
                 className="pointer-events-none object-cover select-none"

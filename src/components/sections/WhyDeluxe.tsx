@@ -12,8 +12,8 @@ export function WhyDeluxe() {
               La diferencia
             </p>
             <h2 className="mt-3 font-display text-4xl font-light md:text-5xl">
-              Por qué tus productos se ven más{" "}
-              <span className="gold-gradient-text italic">caros</span>
+              Por qué tus cuadros se venden{" "}
+              <span className="gold-gradient-text italic">más caros</span>
             </h2>
             <div className="gold-line mx-auto mt-6 w-16" />
           </div>
@@ -25,7 +25,7 @@ export function WhyDeluxe() {
                 className="luxury-card group p-8"
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl border border-luxury-gold/20 bg-luxury-gold/5 text-luxury-gold transition-colors duration-500 group-hover:border-luxury-gold/40 group-hover:bg-luxury-gold/10">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-sm border border-luxury-gold-dark/40 bg-luxury-gold-dark/15 text-luxury-gold transition-colors duration-500 group-hover:border-luxury-gold-dark group-hover:bg-luxury-gold-dark/30">
                   <FeatureIcon name={item.icon} className="h-5 w-5" />
                 </div>
                 <h3 className="font-display text-xl font-medium">

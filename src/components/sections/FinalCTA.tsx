@@ -13,21 +13,21 @@ export function FinalCTA() {
             Empieza hoy
           </p>
           <h2 className="mt-3 font-display text-4xl font-light leading-tight md:text-5xl lg:text-6xl">
-            Eleva el nivel de{" "}
-            <span className="gold-gradient-text italic">tus productos</span>
+            Ten siempre un diseño{" "}
+            <span className="gold-gradient-text italic">listo para vender</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-base font-light leading-relaxed text-white/60 md:text-lg">
-            Obtén ahora la colección premium de Criativarts y ofrece diseños
-            que destacan por calidad, elegancia y alto valor percibido.
+            Más de 200 diseños exclusivos, organizados y listos para imprimir.
+            Un arsenal en alta resolución para atender más clientes y vender más cuadros.
           </p>
 
           <div className="mx-auto mt-10 flex items-center justify-center">
             <div className="animate-float">
               <Image
                 src="/images/mockup-hero.webp"
-                alt="Mega Pack Deluxe — Colección Premium Criativarts"
-                width={720}
-                height={550}
+                alt="Mega Pack Religión — Diseños originales en alta resolución"
+                width={600}
+                height={600}
                 quality={80}
                 sizes="(min-width: 1024px) 520px, 420px"
                 className="h-auto w-full max-w-[400px] object-contain sm:max-w-[420px] lg:max-w-[520px]"

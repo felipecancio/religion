@@ -4,32 +4,39 @@ import { useEffect, useState } from "react";
 import { GALLERY_IMAGES } from "@/lib/constants";
 import { ArtImage } from "./ArtImage";
 
-export function HeroArtGrid() {
+const SAMPLE_IMAGES = GALLERY_IMAGES.slice(0, 10);
+
+export function HeroArtGrid({ variant }: { variant: "mobile" | "desktop" }) {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1024px)");
-    const apply = () => setShow(mq.matches);
+    const apply = () =>
+      setShow(variant === "desktop" ? mq.matches : !mq.matches);
     apply();
     mq.addEventListener("change", apply);
     return () => mq.removeEventListener("change", apply);
-  }, []);
+  }, [variant]);
 
   if (!show) return null;
 
-  const desktopImages = GALLERY_IMAGES.slice(0, 10);
-
   return (
-    <div className="mt-12 grid grid-cols-5 gap-3">
-      {desktopImages.map((id) => (
+    <div
+      className={
+        variant === "desktop"
+          ? "mt-12 grid grid-cols-5 gap-3"
+          : "grid grid-cols-2 gap-3"
+      }
+    >
+      {SAMPLE_IMAGES.map((id) => (
         <div
           key={id}
-          className="relative aspect-[2/3] overflow-hidden rounded-lg"
+          className="relative aspect-[2/3] overflow-hidden rounded-sm"
         >
           <ArtImage
             imageId={id}
             fill
-            sizes="20vw"
+            sizes={variant === "desktop" ? "20vw" : "45vw"}
             className="object-cover"
           />
         </div>

@@ -10,18 +10,18 @@ const config: Config = {
     extend: {
       colors: {
         luxury: {
-          black: "#0A0A0A",
-          graphite: "#1A1A1A",
-          charcoal: "#2A2A2A",
-          silver: "#A8A8A8",
-          gold: "#C9A962",
-          "gold-light": "#E8D5A3",
-          "gold-dark": "#9A7B3C",
+          black: "#0E1526",
+          graphite: "#17233A",
+          charcoal: "#24344F",
+          silver: "#D5CBBF",
+          gold: "#E4B7B2",
+          "gold-light": "#F6EFE6",
+          "gold-dark": "#7C2F3B",
         },
       },
       fontFamily: {
-        display: ["var(--font-cormorant)", "Georgia", "serif"],
-        sans: ["var(--font-outfit)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
       animation: {
         "fade-up": "fadeUp 0.8s ease-out forwards",
@@ -48,9 +48,9 @@ const config: Config = {
         },
       },
       boxShadow: {
-        gold: "0 4px 24px rgba(201, 169, 98, 0.15)",
-        "gold-lg": "0 8px 40px rgba(201, 169, 98, 0.2)",
-        luxury: "0 20px 60px rgba(0, 0, 0, 0.5)",
+        gold: "0 4px 24px rgba(124, 47, 59, 0.28)",
+        "gold-lg": "0 8px 40px rgba(124, 47, 59, 0.38)",
+        luxury: "0 20px 60px rgba(8, 12, 24, 0.45)",
       },
     },
   },

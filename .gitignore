@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Original masters. The page only serves the optimized webp and og.jpg.
+public/images/**/*.png
+public/images/**/*.jpg
+public/images/**/*.jpeg
+public/images/row2/
+public/images/santa ceia/
+/critivos megapack subir/

@@ -1,5 +1,5 @@
 const ACCEPT_PATTERNS =
-  /sí|si\b|quiero|aceptar|agregar|comprar|deluxe|también|tambien|yes|accept/i;
+  /sí|si\b|quiero|aceptar|agregar|comprar|deluxe|religión|religion|también|tambien|yes|accept/i;
 const DECLINE_PATTERNS =
   /no quiero|rechazar|declinar|omitir|no gracias|pasar|decline|skip|cancelar/i;
 

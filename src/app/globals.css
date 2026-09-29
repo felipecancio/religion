@@ -10,37 +10,37 @@
   }
 
   body {
-    @apply bg-luxury-black text-white font-sans;
+    @apply bg-luxury-black font-sans text-[#F4EFE8];
   }
 
   ::selection {
-    @apply bg-luxury-gold/30 text-white;
+    @apply bg-luxury-gold-dark/50 text-luxury-gold-light;
   }
 }
 
 @layer components {
   .gold-gradient-text {
-    @apply bg-gradient-to-r from-luxury-gold-light via-luxury-gold to-luxury-gold-dark bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-luxury-gold-light via-[#F4EFE8] to-luxury-gold bg-clip-text text-transparent;
   }
 
   .gold-line {
-    @apply h-px bg-gradient-to-r from-transparent via-luxury-gold/60 to-transparent;
+    @apply h-px bg-gradient-to-r from-transparent via-luxury-gold-dark to-transparent;
   }
 
   .luxury-card {
-    @apply rounded-2xl border border-white/5 bg-luxury-graphite/50 backdrop-blur-sm transition-all duration-500;
+    @apply rounded-md border border-luxury-gold-dark/25 bg-luxury-graphite/80 transition-all duration-500;
   }
 
   .luxury-card:hover {
-    @apply border-luxury-gold/20 shadow-gold;
+    @apply border-luxury-gold-dark/60 shadow-gold;
   }
 
   .btn-gold {
-    @apply relative inline-flex items-center justify-center rounded-full bg-gradient-to-r from-luxury-gold-dark via-luxury-gold to-luxury-gold-light px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-luxury-black transition-all duration-300 hover:shadow-gold-lg hover:scale-[1.02] active:scale-[0.98];
+    @apply relative inline-flex items-center justify-center rounded-md bg-[#F6E6C4] px-8 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[#1A120C] shadow-[0_10px_32px_rgba(246,230,196,0.28)] transition-all duration-300 hover:bg-[#FFF8EA] hover:shadow-[0_14px_40px_rgba(246,230,196,0.42)] hover:scale-[1.02] active:scale-[0.98];
   }
 
   .btn-gold-outline {
-    @apply inline-flex items-center justify-center rounded-full border border-luxury-gold/40 bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-luxury-gold transition-all duration-300 hover:border-luxury-gold hover:bg-luxury-gold/10;
+    @apply inline-flex items-center justify-center rounded-md border border-luxury-gold-dark/70 bg-transparent px-8 py-4 text-sm font-medium uppercase tracking-[0.16em] text-luxury-gold-light transition-all duration-300 hover:border-luxury-gold hover:bg-luxury-gold-dark/30;
   }
 
   .section-padding {
@@ -78,7 +78,7 @@ details summary {
 }
 
 html {
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 1.25rem;
 }
 
 /* Hide scrollbar for carousel */

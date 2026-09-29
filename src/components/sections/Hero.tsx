@@ -1,11 +1,5 @@
 import Image from "next/image";
 import { CheckoutCTA } from "../CheckoutCTA";
-import { ArtCarousel } from "../ArtCarousel";
-import { HeroArtGrid } from "../HeroArtGrid";
-import { GALLERY_IMAGES, GALLERY_IMAGES_ROW2 } from "@/lib/constants";
-
-const CAROUSEL_ROW1 = GALLERY_IMAGES.slice(0, 10);
-const CAROUSEL_ROW2 = GALLERY_IMAGES_ROW2.slice(0, 10);
 
 function HeroMockup({ className = "" }: { className?: string }) {
   return (
@@ -13,9 +7,9 @@ function HeroMockup({ className = "" }: { className?: string }) {
       <div className="animate-float">
         <Image
           src="/images/mockup-hero.webp"
-          alt="Mega Pack Deluxe — Colección Premium Criativarts"
-          width={720}
-          height={550}
+          alt="Mega Pack Religión — Diseños originales en alta resolución"
+          width={600}
+          height={600}
           priority
           fetchPriority="high"
           quality={80}
@@ -29,66 +23,32 @@ function HeroMockup({ className = "" }: { className?: string }) {
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen overflow-x-hidden pt-16">
+    <section id="inicio" className="relative overflow-x-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-luxury-graphite/30 via-luxury-black to-luxury-black" />
-      <div className="absolute right-0 top-1/4 h-[500px] w-[500px] rounded-full bg-luxury-gold/5 blur-[120px]" />
-      <div className="absolute bottom-0 left-0 h-[300px] w-[300px] rounded-full bg-luxury-gold/3 blur-[100px]" />
+      <div className="absolute right-0 top-1/4 h-[500px] w-[500px] rounded-full bg-luxury-gold-dark/20 blur-[120px]" />
+      <div className="absolute bottom-0 left-0 h-[300px] w-[300px] rounded-full bg-[#24344F] blur-[100px]" />
 
-      <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-16 lg:px-12 lg:pb-16 lg:pt-20">
-        <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-center lg:gap-16">
-          <div className="flex w-full min-w-0 flex-1 flex-col items-center text-center lg:items-start lg:text-left">
-            <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-luxury-gold/30 bg-luxury-gold/5 px-4 py-2">
-              <svg
-                className="h-3.5 w-3.5 shrink-0 text-luxury-gold"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                aria-hidden="true"
-              >
-                <path d="M12 2L2 9l10 13L22 9 12 2z" />
-              </svg>
-              <span className="text-xs font-medium tracking-wide text-luxury-gold/70">
-                Colección Premium{" "}
-                <span className="gold-gradient-text font-semibold">Criativarts</span>
-              </span>
-            </div>
+      <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-12 lg:pb-16 lg:pt-16">
+        <div className="grid grid-cols-1 items-center text-center lg:grid-cols-2 lg:gap-x-16 lg:text-left">
+          <h1 className="font-display text-5xl font-light leading-[1.1] tracking-tight md:text-6xl lg:col-start-1 lg:row-start-1 lg:text-7xl">
+            Mega Pack{" "}
+            <span className="gold-gradient-text font-medium italic">Religión</span>
+          </h1>
 
-            <h1 className="font-display text-5xl font-light leading-[1.1] tracking-tight md:text-6xl lg:text-7xl">
-              Mega Pack{" "}
-              <span className="gold-gradient-text font-medium italic">Deluxe</span>
-            </h1>
+          <p className="mt-4 font-display text-xl font-light italic text-luxury-silver md:text-2xl lg:col-start-1 lg:row-start-2">
+            Diseños originales, en alta resolución, para cuadros de cualquier tamaño.
+          </p>
 
-            <p className="mt-4 font-display text-xl font-light italic text-luxury-silver md:text-2xl">
-              Diseños exclusivos de alto valor percibido para productos que se venden como lujo.
-            </p>
+          <div className="gold-line mx-auto my-8 w-24 lg:col-start-1 lg:row-start-3 lg:mx-0" />
 
-            <div className="gold-line my-8 w-24 lg:mx-0" />
+          <HeroMockup className="mb-8 w-full lg:col-start-2 lg:row-start-1 lg:row-span-4 lg:mb-0 lg:self-center" />
 
-            <HeroMockup className="mb-8 w-full lg:hidden" />
-
-            <p className="max-w-lg text-sm font-light leading-relaxed text-white/70 md:text-base lg:text-lg">
-              No es un pack más. Es una curaduría premium de arte sofisticado,
-              lista para cuadros, playeras, DTF, sublimación y regalos que merecen
-              un precio más alto. Acceso inmediato. Uso comercial incluido.
-            </p>
-
-            <div className="relative -mx-6 my-8 max-w-[calc(100%+3rem)] w-[calc(100%+3rem)] min-w-0 overflow-hidden space-y-4 touch-pan-y lg:hidden">
-              <ArtCarousel images={CAROUSEL_ROW1} direction="left" />
-              <ArtCarousel
-                images={CAROUSEL_ROW2}
-                direction="right"
-                imageBasePath="/images/row2"
-              />
-            </div>
-          </div>
-
-          <div className="hidden w-full min-w-0 flex-1 lg:flex lg:items-center lg:justify-center">
-            <HeroMockup />
-          </div>
+          <p className="mx-auto max-w-lg text-sm font-light leading-relaxed text-white/70 md:text-base lg:col-start-1 lg:row-start-4 lg:mx-0 lg:text-lg">
+            Consigue un arsenal de diseños religiosos nuevos y exclusivos en
+            formatos JPG y PNG, listos para imprimir y crear cuadros incluso
+            de más de 2 metros. Acceso inmediato, con un pago único y seguro.
+          </p>
         </div>
-
-        <HeroArtGrid />
 
         <div className="mt-10 flex flex-col items-center">
           <CheckoutCTA size="large" />

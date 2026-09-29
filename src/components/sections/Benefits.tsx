@@ -12,8 +12,8 @@ export function Benefits() {
               Aplicaciones
             </p>
             <h2 className="mt-3 font-display text-4xl font-light md:text-5xl">
-              Diseños premium para{" "}
-              <span className="gold-gradient-text italic">tu negocio</span>
+              Diseños para cualquier{" "}
+              <span className="gold-gradient-text italic">tipo de cuadro</span>
             </h2>
             <div className="gold-line mx-auto mt-6 w-16" />
           </div>
@@ -24,7 +24,7 @@ export function Benefits() {
                 key={item.title}
                 className="luxury-card group flex flex-col items-center p-6 text-center"
               >
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-full border border-luxury-gold/20 text-luxury-gold transition-all duration-500 group-hover:border-luxury-gold/50 group-hover:shadow-gold">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-sm border border-luxury-gold-dark/40 text-luxury-gold transition-all duration-500 group-hover:border-luxury-gold-dark group-hover:shadow-gold">
                   <FeatureIcon name={item.icon} className="h-5 w-5" />
                 </div>
                 <span className="text-sm font-light text-white/70">

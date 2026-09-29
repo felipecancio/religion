@@ -2,7 +2,7 @@ import { TRUST_STATS } from "@/lib/constants";
 
 export function TrustBar() {
   return (
-    <section className="border-y border-white/5 bg-luxury-graphite/40">
+    <section className="border-y border-luxury-gold-dark/25 bg-luxury-graphite/70">
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-px md:grid-cols-4">
         {TRUST_STATS.map((item) => (
           <div key={item.label} className="px-6 py-8 text-center">
